@@ -14,7 +14,7 @@ const Create = () => {
   const [levelType, setLevelType] = useState("Easy");
   const [image, setImage] = useState(null);
   const [previewImage, setPreviewImage] = useState(null);
-  const [isEditingImage, setIsEditingImage] = useState(false); // State to track whether the user is changing the image
+  const [isEditingImage, setIsEditingImage] = useState(false); 
   const fileInput = useRef(null);
   const { addChallenge, updateChallenge } = useContext(ChallengeContext);
   const location = useLocation();
@@ -37,7 +37,7 @@ const Create = () => {
       setImage(file);
       const newPreview = URL.createObjectURL(file);
       setPreviewImage(newPreview);
-      setIsEditingImage(false); // Automatically hide the input field after updating the image
+      setIsEditingImage(false); 
     }
   };
 
@@ -51,13 +51,13 @@ const Create = () => {
       endDate,
       description,
       levelType,
-      image: previewImage // Use previewImage for the URL or data URL
+      image: previewImage 
     };
 
     if (image) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        challengeData.image = reader.result; // Update image with data URL
+        challengeData.image = reader.result; 
 
         if (challengeToEdit) {
           updateChallenge(challengeData.id, challengeData);
@@ -85,7 +85,7 @@ const Create = () => {
     setLevelType('Easy');
     setImage(null);
     setPreviewImage(null);
-    setIsEditingImage(false); // Reset the image editing state
+    setIsEditingImage(false); 
 
     if (fileInput.current) {
       fileInput.current.value = null;

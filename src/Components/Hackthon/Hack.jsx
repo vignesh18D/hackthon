@@ -23,12 +23,12 @@ const Hack = () => {
     }, [id, challenges]);
 
     const handleEdit = () => {
-        navigate('/create', { state: { challenge } }); // Navigate to create page with challenge data
+        navigate('/create', { state: { challenge } }); 
     };
 
     const handleDelete = () => {
-        deleteChallenge(id); // Use the ID for deletion
-        navigate('/'); // Redirect to the Display page
+        deleteChallenge(id); 
+        navigate('/'); 
     };
 
     const formatDateToIST = (dateString) => {
@@ -59,8 +59,7 @@ const Hack = () => {
         }
     };
 
-    if (!challenge) return <p>Loading...</p>; // Show loading state while fetching data
-
+    if (!challenge) return <p>Loading...</p>; 
     return (
         <>
             <Nav />

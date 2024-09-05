@@ -9,12 +9,10 @@ const Explore = () => {
     const { setSearchTerm, filters, setFilters } = useContext(ChallengeContext);
     const filterRef = useRef(null); 
 
-    // Toggle filter visibility
     const toggleFilters = () => {
         setShowFilters(prev => !prev);
     };
 
-    // Handle outside click to close the filter box
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (filterRef.current && !filterRef.current.contains(event.target)) {
@@ -22,26 +20,26 @@ const Explore = () => {
             }
         };
 
-        // Add the event listener when the filter box is open
+       
         if (showFilters) {
             document.addEventListener('mousedown', handleClickOutside);
         }
 
-        // Cleanup the event listener when the component unmounts or filter box is closed
+        
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, [showFilters]);
 
     const handleSearch = (e) => {
-        setSearchTerm(e.target.value); // Update search term in context
+        setSearchTerm(e.target.value);
     };
 
     const handleFilterChange = (e) => {
         const { name, value } = e.target;
         setFilters({
             ...filters,
-            [name]: value // Update filters in context
+            [name]: value 
         });
     };
 
@@ -55,7 +53,7 @@ const Explore = () => {
                         type='text'
                         placeholder='Search'
                         className='name-search'
-                        onChange={handleSearch} // Update search term
+                        onChange={handleSearch} 
                     />
                 </div>
                 <div className="but" onClick={toggleFilters}>
@@ -64,7 +62,7 @@ const Explore = () => {
                 </div>
             </div>
             {showFilters && (
-                <div className="filter-dropdown" ref={filterRef}> {/* Apply ref here */}
+                <div className="filter-dropdown" ref={filterRef}> 
                     <div className="filter-section">
                         <h3>Status</h3>
                         <div>

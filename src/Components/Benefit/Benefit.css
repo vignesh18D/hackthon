@@ -78,33 +78,25 @@
     }
     .box {
         display: block;
-        /* Stack boxes vertically on mobile */
         width: 100%;
-        /* Full width on mobile */
         height: auto;
-        /* Height adjusts automatically */
         margin: 10px 0;
-        /* Vertical margin only on mobile */
     }
     .img {
         padding: 15px;
     }
     .img img {
         width: 40px;
-        /* Adjust size for mobile */
         height: 40px;
         margin-left: 10px;
-        /* Reduce margin for mobile */
     }
     .layer {
         padding: 15px;
     }
     .layer h2 {
         font-size: 1.4rem;
-        /* Smaller font size on mobile */
     }
     .layer p {
         font-size: 1rem;
-        /* Adjust font size for mobile */
     }
 }

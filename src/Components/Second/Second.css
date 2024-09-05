@@ -60,7 +60,6 @@
 
 .number {
     margin-top: 10px;
-    /* Add some space above the text */
 }
 
 
@@ -69,7 +68,6 @@
 @media (max-width: 425px) {
     .second-main {
         flex-direction: column;
-        /* Stack sections vertically */
         align-items: center;
         padding: 40px 0px;
     }
@@ -77,15 +75,12 @@
         padding: 10px;
         margin: 10px;
         width: 100%;
-        /* Make each section full width on mobile */
     }
     .second-line {
         display: none;
-        /* Hide separator lines on mobile for a cleaner look */
     }
     .layer-1 img {
         width: 90px;
-        /* Reduce image size further for mobile */
     }
     .layer-1 h1 {
         font-size: 20px;

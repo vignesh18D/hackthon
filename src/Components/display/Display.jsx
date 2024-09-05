@@ -30,7 +30,7 @@ const Display = () => {
         return 'past';
     };
 
-    // Time calculation functions
+   
     const getTiming = (challenge) => {
         const now = new Date();
         const startDate = new Date(challenge.startDate);
@@ -61,7 +61,7 @@ const Display = () => {
         let difference = date2 - date1;
 
         if (difference < 0) {
-            return "0 : 0 : 0"; // Avoid negative time differences
+            return "0 : 0 : 0"; 
         }
 
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -71,7 +71,7 @@ const Display = () => {
         return `${days} : ${hours} : ${minutes}`;
     };
 
-    // Filter challenges based on search term and filters
+   
     const filteredChallenges = challenges.filter((challenge) => {
         const matchesSearch = challenge.createName.toLowerCase().includes(searchTerm.toLowerCase());
         const matchesStatus = filters.status === '' || getText(challenge) === filters.status;
@@ -85,7 +85,7 @@ const Display = () => {
             <h2 className='display-title'>Created Challenges</h2>
             <div className="grid">
                 {filteredChallenges.map((challenge, index) => {
-                    const timing = getTiming(challenge); // Get timing info
+                    const timing = getTiming(challenge);
                     return (
                         <div key={index} className='card'>
                             {challenge.image && <img src={challenge.image} alt="Challenge" className="image" />}
