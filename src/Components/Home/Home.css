@@ -1,0 +1,398 @@
+.create {
+    background-color: #1A2A44;
+    width: auto;
+    height: 500px;
+    display: flex;
+    color: white;
+    padding-top: 30px;
+}
+
+.home-cont {
+    margin-left: 90px;
+    margin-top: 70px;
+}
+
+.content {
+    padding: 40px;
+    margin-top: 50px;
+    margin-left: 130px;
+    width: auto;
+    height: 75vh;
+}
+
+.line {
+    display: flex;
+    gap: 40px;
+    margin-left: -40px;
+}
+
+.line .small {
+    border-left: 7px solid rgb(12, 225, 12);
+    height: 120px;
+    margin-top: 5px;
+}
+
+.content h1 {
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 43px;
+    margin-bottom: 30px;
+    width: auto;
+    background: transparent;
+    letter-spacing: 2px;
+}
+
+.content p {
+    font-family: 'inter', sans-serif;
+    line-height: 30px;
+    letter-spacing: 3px;
+    width: auto;
+    font-size: 18px;
+}
+
+button {
+    margin-top: 50px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'poppins', sans-serif;
+    border: none;
+    background: rgb(255, 255, 255);
+    font-weight: 700;
+    color: #1A2A44;
+    cursor: pointer;
+}
+
+.home-right {
+    margin-left: 90px;
+}
+
+.home-right img {
+    margin-left: -10px;
+    width: 340px;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+@media (min-width: 1010px) and (max-width: 1120px) {
+    .home-cont {
+        margin-left: 40px;
+        margin-top: 30px;
+        height: 80px;
+        position: relative;
+        padding-top: 30px;
+    }
+    .line {
+        display: flex;
+        gap: 40px;
+        margin-left: -40px;
+    }
+    .line .small {
+        border-left: 7px solid rgb(12, 225, 12);
+        height: 120px;
+        margin-top: 10px;
+    }
+    .content h1 {
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        font-size: 35px;
+        margin-bottom: 20px;
+        width: auto;
+        background: transparent;
+        letter-spacing: 1px;
+    }
+    .content p {
+        font-family: 'inter', sans-serif;
+        line-height: 30px;
+        letter-spacing: 3px;
+        width: 600px;
+        font-size: 18px;
+    }
+    button {
+        margin-top: 50px;
+        padding: 8px 20px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-family: 'poppins', sans-serif;
+        border: none;
+        background: rgb(255, 255, 255);
+        font-weight: 700;
+        color: #1A2A44;
+        cursor: pointer;
+        position: absolute;
+        margin-bottom: 30px;
+    }
+    .create {
+        padding-bottom: 60px;
+        padding-top: 30px;
+    }
+    .home-right {
+        margin-left: 40px;
+    }
+    .home-right img {
+        margin-left: -100px;
+        width: 340px;
+        margin-top: 100px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1010px) {
+    .home-cont {
+        margin-left: 30px;
+        margin-top: 30px;
+        height: 80px;
+        position: relative;
+        padding-top: 30px;
+    }
+    .line {
+        display: flex;
+        gap: 40px;
+        margin-left: -40px;
+    }
+    .line .small {
+        border-left: 7px solid rgb(12, 225, 12);
+        height: 120px;
+        margin-top: 5px;
+    }
+    .content h1 {
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        width: auto;
+        background: transparent;
+        letter-spacing: 1px;
+    }
+    .content p {
+        font-family: 'inter', sans-serif;
+        line-height: 30px;
+        letter-spacing: 3px;
+        width: auto;
+        font-size: 18px;
+        width: 360px;
+        margin-top: -40px;
+    }
+    button {
+        margin-top: 50px;
+        padding: 8px 20px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-family: 'poppins', sans-serif;
+        border: none;
+        background: rgb(255, 255, 255);
+        font-weight: 700;
+        color: #1A2A44;
+        cursor: pointer;
+        position: absolute;
+        margin-bottom: 30px;
+    }
+    .create {
+        padding-bottom: 60px;
+        padding-top: 30px;
+    }
+    .home-right {
+        margin-left: 40px;
+    }
+    .home-right img {
+        margin-left: -90px;
+        width: 340px;
+        margin-top: 70px;
+        margin-right: 70px;
+    }
+}
+
+@media (min-width: 510px) and (max-width: 759px) {
+    .home-cont {
+        margin-left: 30px;
+        margin-top: 30px;
+        height: auto;
+        position: relative;
+        padding-top: 30px;
+    }
+    .line {
+        display: flex;
+        gap: 40px;
+        margin-left: -40px;
+    }
+    .line .small {
+        border-left: 7px solid rgb(12, 225, 12);
+        height: 120px;
+        margin-top: 5px;
+    }
+    .content h1 {
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        width: auto;
+        background: transparent;
+        letter-spacing: 1px;
+    }
+    .content p {
+        font-family: 'inter', sans-serif;
+        line-height: 30px;
+        letter-spacing: 3px;
+        font-size: 14px;
+        margin-top: -0px;
+        width: 250px;
+    }
+    button {
+        margin-top: 50px;
+        padding: 8px 20px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-family: 'poppins', sans-serif;
+        border: none;
+        background: rgb(255, 255, 255);
+        font-weight: 700;
+        color: #1A2A44;
+        cursor: pointer;
+        position: absolute;
+        margin-bottom: 30px;
+    }
+    .create {
+        padding-bottom: 60px;
+        padding-top: 30px;
+        height: auto;
+    }
+    .home-right {
+        margin-left: 40px;
+    }
+    .home-right img {
+        margin-left: -130px;
+        width: 290px;
+        margin-top: 70px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 509px) {
+    .home-cont {
+        margin-left: 10px;
+        margin-top: 30px;
+        height: auto;
+        position: relative;
+        padding-top: 30px;
+    }
+    .line {
+        display: flex;
+        gap: 10px;
+        margin-left: -30px;
+    }
+    .line .small {
+        border-left: 7px solid rgb(12, 225, 12);
+        height: 100px;
+        margin-top: 5px;
+    }
+    .content h1 {
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        width: auto;
+        background: transparent;
+        letter-spacing: 1px;
+    }
+    .content p {
+        font-family: 'inter', sans-serif;
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-top: -0px;
+        width: 250px;
+        margin-left: -20px;
+    }
+    button {
+        margin-top: 20px;
+        padding: 8px 20px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-family: 'poppins', sans-serif;
+        border: none;
+        background: rgb(255, 255, 255);
+        font-weight: 700;
+        color: #1A2A44;
+        cursor: pointer;
+        position: absolute;
+        margin-bottom: 30px;
+        margin-left: -30px;
+    }
+    .create {
+        padding-bottom: 100px;
+        padding-top: 30px;
+        height: auto;
+    }
+    .home-right {
+        margin-left: 40px;
+    }
+    .home-right img {
+        margin-left: -120px;
+        width: 150px;
+        margin-top: 90px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 310px) and (max-width: 375px) {
+    .home-cont {
+        margin-left: 10px;
+        margin-top: 30px;
+        height: auto;
+        position: relative;
+        padding-top: 30px;
+    }
+    .line {
+        display: flex;
+        gap: 10px;
+        margin-left: -30px;
+    }
+    .line .small {
+        border-left: 7px solid rgb(12, 225, 12);
+        height: 80px;
+        margin-top: 5px;
+    }
+    .content h1 {
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        font-size: 19px;
+        width: auto;
+        background: transparent;
+        letter-spacing: 1px;
+    }
+    .content p {
+        font-family: 'inter', sans-serif;
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-top: -0px;
+        width: 200px;
+        margin-left: -20px;
+    }
+    button {
+        margin-top: 20px;
+        padding: 8px 20px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-family: 'poppins', sans-serif;
+        border: none;
+        background: rgb(255, 255, 255);
+        font-weight: 700;
+        color: #1A2A44;
+        cursor: pointer;
+        position: absolute;
+        margin-bottom: 30px;
+        margin-left: -30px;
+    }
+    .create {
+        padding-bottom: 10px;
+        padding-top: 30px;
+        height: auto;
+    }
+    .home-right {
+        margin-left: 40px;
+    }
+    .home-right img {
+        margin-left: -120px;
+        width: 190px;
+        margin-top: 150px;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,96 @@
+.second-main {
+    width: 100%;
+    /* Full width for responsiveness */
+    padding: 0;
+    margin: 0;
+    height: auto;
+    /* Adjust height to fit content */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0d172e;
+    color: white;
+    flex-wrap: wrap;
+    /* Enable wrapping for smaller screens */
+    align-items: center;
+}
+
+.layer-1 {
+    display: flex;
+    padding: 20px;
+    /* Adjusted padding for responsiveness */
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Stack content vertically for smaller screens */
+    text-align: center;
+}
+
+.layer-1 img {
+    width: 100px;
+    /* Reduce image size for smaller screens */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 10px;
+    /* Add space between image and text */
+}
+
+.second-line {
+    border-left: 2px solid white;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.layer-1 h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    /* Reduce font size for mobile */
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.layer-1 h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    /* Reduce font size for better readability */
+    font-weight: 200;
+}
+
+.number {
+    margin-top: 10px;
+    /* Add some space above the text */
+}
+
+
+/* Mobile view (max-width: 768px) */
+
+@media (max-width: 425px) {
+    .second-main {
+        flex-direction: column;
+        /* Stack sections vertically */
+        align-items: center;
+        padding: 40px 0px;
+    }
+    .layer-1 {
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        /* Make each section full width on mobile */
+    }
+    .second-line {
+        display: none;
+        /* Hide separator lines on mobile for a cleaner look */
+    }
+    .layer-1 img {
+        width: 90px;
+        /* Reduce image size further for mobile */
+    }
+    .layer-1 h1 {
+        font-size: 20px;
+    }
+    .layer-1 h2 {
+        font-size: 18px;
+    }
+}

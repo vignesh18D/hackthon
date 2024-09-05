@@ -1,0 +1,297 @@
+.card-box {
+    width: auto;
+    background-color: #0d172e;
+    color: white;
+    padding: 90px;
+    /* Reduced padding for better responsiveness */
+    padding-left: 40px;
+    text-align: left;
+    padding-top: 120px;
+}
+
+.card-box h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    /* Reduced size for smaller screens */
+    margin-top: 10px;
+}
+
+.time-status {
+    background-color: rgb(103, 103, 11);
+    padding: 8px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    width: 40%;
+    /* Allow it to adjust to content size */
+}
+
+.paragraph {
+    padding: 30px;
+    /* Adjusted padding for smaller screens */
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+.paragraph .p-1 {
+    margin-bottom: 20px;
+}
+
+.levell {
+    display: flex;
+    margin-top: 10px;
+    gap: 3px;
+    padding: 10px;
+    background-color: #ffffff;
+    width: 8%;
+    /* Make width auto for mobile */
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.levell h4 {
+    color: black;
+    text-align: center;
+    margin-left: 5px;
+    font-family: 'Inter', sans-serif;
+    background: none;
+}
+
+.levell img {
+    margin-left: 5px;
+    background: none;
+}
+
+.little {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(120, 120, 120);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.little .btts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -40px;
+    /* Adjusted for smaller screens */
+    margin-right: 40px;
+    /* Reduced margin for smaller screens */
+    gap: 20px;
+    /* Reduced gap for smaller buttons */
+}
+
+.pa {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    /* Reduced margin */
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    /* Reduced font size for mobile */
+    margin-top: 20px;
+}
+
+.lll {
+    height: 3px;
+    width: 100px;
+    /* Adjusted width for mobile */
+    background-color: green;
+    margin-top: 30px;
+    /* Reduced margin for better fit */
+    margin-left: -100px;
+    border: 1px solid green;
+}
+
+.para {
+    padding: 20px 0px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    /* Adjusted for readability */
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.btts .edit,
+.btts .del {
+    padding: 8px 15px;
+    /* Reduced button padding for smaller screens */
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.btts .edit {
+    color: rgb(1, 57, 1);
+    background: none;
+    border: 2px solid rgb(3, 38, 3);
+}
+
+.btts .del {
+    background: none;
+    border: 2px solid red;
+    color: red;
+}
+
+.btts .edit:hover {
+    background-color: rgb(180, 249, 180);
+}
+
+.btts .del:hover {
+    background-color: rgb(232, 160, 160);
+}
+
+
+/* Media Query for mobile responsiveness */
+
+@media (max-width: 1040px) {
+    .time-status {
+        background-color: rgb(103, 103, 11);
+        padding: 8px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 1px;
+        font-weight: 600;
+        width: 50%;
+        /* Allow it to adjust to content size */
+    }
+    .little .btts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: -40px;
+        /* Adjusted for smaller screens */
+        margin-right: 80px;
+        /* Reduced margin for smaller screens */
+        gap: 60px;
+        /* Reduced gap for smaller buttons */
+    }
+    .btts .edit {
+        color: rgb(1, 57, 1);
+        background: none;
+        border: 2px solid rgb(3, 38, 3);
+        margin-right: 160px;
+    }
+    .levell {
+        display: flex;
+        margin-top: 10px;
+        gap: 3px;
+        padding: 10px;
+        background-color: #ffffff;
+        width: 10%;
+        /* Make width auto for mobile */
+        border-radius: 20px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .time-status {
+        background-color: rgb(103, 103, 11);
+        padding: 8px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 1px;
+        font-weight: 600;
+        width: 70%;
+        /* Allow it to adjust to content size */
+    }
+    .little .btts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: -20px;
+        /* Adjusted for smaller screens */
+        margin-right: 80px;
+        /* Reduced margin for smaller screens */
+        gap: 60px;
+        /* Reduced gap for smaller buttons */
+    }
+    .btts .edit {
+        color: rgb(1, 57, 1);
+        background: none;
+        border: 2px solid rgb(3, 38, 3);
+        margin-right: 160px;
+    }
+    .levell {
+        display: flex;
+        margin-top: 10px;
+        gap: 3px;
+        padding: 10px;
+        background-color: #ffffff;
+        width: 15%;
+        /* Make width auto for mobile */
+        border-radius: 20px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .time-status {
+        background-color: rgb(103, 103, 11);
+        padding: 8px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        width: 110%;
+        font-size: 12px;
+        /* Allow it to adjust to content size */
+    }
+    .little .btts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        /* Adjusted for smaller screens */
+        margin-right: 60px;
+        /* Reduced margin for smaller screens */
+        gap: 60px;
+        /* Reduced gap for smaller buttons */
+    }
+    .btts .edit {
+        color: rgb(1, 57, 1);
+        background: none;
+        border: 2px solid rgb(3, 38, 3);
+        margin-right: 160px;
+    }
+    .levell {
+        display: flex;
+        margin-top: 10px;
+        gap: 3px;
+        padding: 10px;
+        background-color: #ffffff;
+        width: 30%;
+        /* Make width auto for mobile */
+        border-radius: 20px;
+        padding-left: 10px;
+    }
+    .card-box h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+        /* Reduced size for smaller screens */
+        margin-top: 10px;
+    }
+}
